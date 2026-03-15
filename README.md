@@ -39,8 +39,8 @@ Add to your `claude_desktop_config.json`:
 {
   "mcpServers": {
     "kroger": {
-      "command": "node",
-      "args": ["/absolute/path/to/kroger-mcp-server/dist/index.js"],
+      "command": "npx",
+      "args": ["tsx", "/absolute/path/to/kroger-mcp-server/src/index.ts"],
       "env": {
         "KROGER_CLIENT_ID": "your_client_id_here",
         "KROGER_CLIENT_SECRET": "your_client_secret_here"
